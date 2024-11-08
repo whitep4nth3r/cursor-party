@@ -12,14 +12,13 @@ const styles: Record<string, React.CSSProperties> = {
     height: "48px",
     borderRadius: "24px",
     minWidth: "4.4em",
-    backgroundColor: "rgba(52, 199, 89, 1)",
+    backgroundColor: "#0e0016",
     color: "white",
     display: "flex",
     justifyContent: "end",
     alignItems: "center",
     gap: "8px",
-    fontFamily:
-      'system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
+    fontFamily: 'system-ui, Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans", Arial, sans-serif',
     fontWeight: 320,
   },
   input: {
@@ -138,8 +137,7 @@ export default function Chat() {
           onClick={() => {
             setListening(false);
             setMessage("");
-          }}
-        >
+          }}>
           &times;
         </div>
       </div>

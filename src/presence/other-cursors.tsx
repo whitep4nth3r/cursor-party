@@ -2,20 +2,12 @@ import * as React from "react";
 import Cursor from "./cursor";
 import { usePresenceWithCursors } from "./use-cursors";
 
-export default function OtherCursors({
-  showChat = false,
-}: {
-  showChat: boolean;
-}) {
-  const otherUserIds = usePresenceWithCursors((state) =>
-    Array.from(state.otherUsers.keys())
-  );
+export default function OtherCursors({ showChat = false }: { showChat: boolean }) {
+  const otherUserIds = usePresenceWithCursors((state) => Array.from(state.otherUsers.keys()));
   const within = usePresenceWithCursors((state) => state.within);
 
   const style = {
-    position: (within === "window"
-      ? "fixed"
-      : "absolute") as React.CSSProperties["position"],
+    position: (within === "window" ? "fixed" : "absolute") as React.CSSProperties["position"],
     top: 0,
     left: 0,
     right: 0,
@@ -27,9 +19,7 @@ export default function OtherCursors({
   return (
     <div style={style}>
       {otherUserIds.map((id) => {
-        return (
-          <Cursor key={id} userId={id} fill={"#00f"} showChat={showChat} />
-        );
+        return <Cursor key={id} userId={id} fill={"#f0047f"} showChat={showChat} />;
       })}
     </div>
   );

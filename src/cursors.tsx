@@ -5,9 +5,7 @@ import Cursors from "./presence/Cursors";
 
 declare const PARTYKIT_HOST: string;
 
-const pageId = window?.location.href
-  ? btoa(window.location.href.split(/[?#]/)[0])
-  : "default";
+const pageId = window?.location.href ? btoa(window.location.href.split(/[?#]/)[0]) : "default";
 
 function App() {
   return (
@@ -16,9 +14,8 @@ function App() {
       room={pageId}
       presence={{
         name: "Anonymous User",
-        color: "#0000f0",
-      }}
-    >
+        color: "#f0047f",
+      }}>
       <Cursors />
     </PresenceProvider>
   );
