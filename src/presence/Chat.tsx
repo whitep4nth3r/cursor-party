@@ -1,6 +1,9 @@
 import * as React from "react";
 import { useState, useEffect } from "react";
 import { usePresence } from "./presence-context";
+import { Filter } from "bad-words";
+
+const filter = new Filter();
 
 const styles: Record<string, React.CSSProperties> = {
   container: {
@@ -125,7 +128,7 @@ export default function Chat() {
 
   // When the message changes, send it to the server
   useEffect(() => {
-    updatePresence({ message: message.length > 0 ? message : null });
+    updatePresence({ message: message.length > 0 ? filter.clean(message) : null });
   }, [message, updatePresence]);
 
   if (listening || message) {

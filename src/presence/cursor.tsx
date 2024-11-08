@@ -67,7 +67,7 @@ export default function Cursor(props: { userId: string; fill: string; showChat: 
             fontSize: "16px",
             fontStyle: "normal",
             fontFamily:
-              'system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
+              'system-ui, system-ui, Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans", Arial, sans-serif"',
             color: "white",
             padding: "4px 9px 4px 9px",
             borderRadius: "16px 16px 16px 16px",
