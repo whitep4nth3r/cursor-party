@@ -21,7 +21,7 @@ const styles: Record<string, React.CSSProperties> = {
     justifyContent: "end",
     alignItems: "center",
     gap: "8px",
-    fontFamily: "Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace";
+    fontFamily: "Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace",
     fontWeight: 320,
   },
   input: {
