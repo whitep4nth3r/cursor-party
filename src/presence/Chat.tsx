@@ -21,7 +21,7 @@ const styles: Record<string, React.CSSProperties> = {
     justifyContent: "end",
     alignItems: "center",
     gap: "8px",
-    fontFamily: 'system-ui, Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans", Arial, sans-serif',
+    fontFamily: "monospace, monospace",
     fontWeight: 320,
   },
   input: {
